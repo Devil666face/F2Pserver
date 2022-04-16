@@ -1,0 +1,1 @@
+web: gunicorn F2Pserver.wsgi:application --log-file -

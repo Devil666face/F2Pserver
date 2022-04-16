@@ -1,0 +1,210 @@
+<html lang="ru"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Проверка билета</title>
+<style>@font-face {
+	font-family: 'Conv_Ubuntu_Rouble';
+	src: url(/./assets/fonts/Ubuntu_Rouble.eot);
+	src: local('☺'), 
+		url(/./assets/fonts/Ubuntu_Rouble.woff) format('woff'),
+		url(/./assets/fonts/Ubuntu_Rouble.ttf) format('truetype'),
+		url(/./assets/fonts/Ubuntu_Rouble.svg) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}</style><style>html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+}
+</style><style>.Preloader-module__preloader___1io4l {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: #ed1c28;
+}
+</style><style>.Status-module__status___2rdzm {
+  margin-bottom: 1.5rem;
+}
+.Status-module__status___2rdzm .Status-module__description___1mjNM {
+  margin-top: 0.25rem;
+}
+</style><style>.Text-module__text___k0kSx.Text-module__size-xl___ph98X {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+.Text-module__text___k0kSx.Text-module__size-l___1o4mH {
+  font-size: 2rem;
+  line-height: 1;
+}
+.Text-module__text___k0kSx.Text-module__size-m___1r9UX {
+  margin-bottom: 0.375rem;
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+.Text-module__text___k0kSx.Text-module__size-s___LlQOR {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.Text-module__text___k0kSx.Text-module__weight-bold___Makc9 {
+  font-weight: 700;
+}
+.Text-module__text___k0kSx.Text-module__weight-medium___2a9HY {
+  font-weight: 500;
+}
+.Text-module__text___k0kSx.Text-module__weight-regular___2toYH {
+  font-weight: 400;
+}
+.Text-module__text___k0kSx.Text-module__color-white___2YcpA {
+  color: #fff;
+}
+</style><style>.Ticket-module__ticket___2Psgg {
+  padding: 1.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  color: #272827;
+}
+</style><style>.LicensePlate-module__license_plate___BiHof {
+  display: inline-flex;
+  border: 1px solid #cccbcc;
+  background-color: #fff;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  line-height: 1;
+}
+.LicensePlate-module__license_plate___BiHof .LicensePlate-module__main___2LmkT {
+  display: inline-block;
+}
+.LicensePlate-module__license_plate___BiHof .LicensePlate-module__region___1hLjS {
+  display: inline-block;
+  border-left: 1px solid #cccbcc;
+}
+.LicensePlate-module__license_plate___BiHof.LicensePlate-module__yellow___ggqMj {
+  border-color: #282728;
+  background-color: #fabc3c;
+}
+.LicensePlate-module__license_plate___BiHof.LicensePlate-module__yellow___ggqMj .LicensePlate-module__region___1hLjS {
+  border-color: #282728;
+}
+.LicensePlate-module__license_plate___BiHof.LicensePlate-module__size-s___2HNy0 {
+  border-radius: 0.125rem;
+  font-size: 1rem;
+}
+.LicensePlate-module__license_plate___BiHof.LicensePlate-module__size-s___2HNy0 .LicensePlate-module__main___2LmkT {
+  padding: 0.25rem 0.375rem 0.125rem 0.5rem;
+}
+.LicensePlate-module__license_plate___BiHof.LicensePlate-module__size-s___2HNy0 .LicensePlate-module__region___1hLjS {
+  padding: 0.25rem 0.375rem 0.125rem;
+}
+.LicensePlate-module__license_plate___BiHof.LicensePlate-module__size-m___9Xxgc {
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+}
+.LicensePlate-module__license_plate___BiHof.LicensePlate-module__size-m___9Xxgc .LicensePlate-module__main___2LmkT {
+  padding: 0.25rem 0.375rem 0.125rem 0.5rem;
+}
+.LicensePlate-module__license_plate___BiHof.LicensePlate-module__size-m___9Xxgc .LicensePlate-module__region___1hLjS {
+  padding: 0.25rem 0.375rem 0.125rem;
+}
+.LicensePlate-module__license_plate___BiHof.LicensePlate-module__size-l___1W1bY {
+  border-radius: 0.25rem;
+  font-size: 2rem;
+}
+.LicensePlate-module__license_plate___BiHof.LicensePlate-module__size-l___1W1bY .LicensePlate-module__main___2LmkT {
+  padding: 0.375rem 0.5rem 0.125rem 0.75rem;
+}
+.LicensePlate-module__license_plate___BiHof.LicensePlate-module__size-l___1W1bY .LicensePlate-module__region___1hLjS {
+  padding: 0.375rem 0.5rem 0.125rem;
+}
+</style><style>.LabelGroup-module__label_group___1O2je {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.LabelGroup-module__label_group___1O2je .LabelGroup-module__label___3tYoR {
+  margin-bottom: 0.375rem;
+}
+</style><style>.Label-module__label___16Blo {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+</style><style>.Route-module__route___3LSYK .Route-module__point___8dImp {
+  position: relative;
+  padding-left: 2rem;
+}
+.Route-module__route___3LSYK .Route-module__point___8dImp:before {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border: #ed1c28 solid 0.375rem;
+  border-radius: 1.5rem;
+  content: '';
+}
+.Route-module__route___3LSYK .Route-module__point___8dImp:not(:first-child) {
+  margin-top: 1.25rem;
+}
+.Route-module__route___3LSYK .Route-module__point___8dImp:not(:first-child):after {
+  position: absolute;
+  top: -1.75rem;
+  left: 0.5625rem;
+  width: 0.125rem;
+  height: 2.25rem;
+  background-color: #ed1c28;
+  content: '';
+}
+</style><style>.Container-module__container___j_TcO {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+.Container-module__container___j_TcO .Container-module__content___3V-qX {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 1rem 2rem;
+  max-width: 32rem;
+  width: 100%;
+}
+</style><style>.Bg-module__bg___2UbgV {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-color: #767576;
+}
+.Bg-module__bg___2UbgV.Bg-module__color-red___wFNZs {
+  background-color: #e45c5c;
+}
+.Bg-module__bg___2UbgV.Bg-module__color-yellow___1jySi {
+  background-color: #c99a00;
+}
+.Bg-module__bg___2UbgV.Bg-module__color-green___2R3Ud {
+  background-color: #4daa57;
+}
+</style></head>
+
+<body>
+    <div id="root"><div class="Container-module__container___j_TcO"><div class="Container-module__content___3V-qX"><div class="Status-module__status___2rdzm"><div class="Text-module__text___k0kSx Text-module__size-l___1o4mH Text-module__weight-medium___2a9HY Text-module__color-white___2YcpA">Все в порядке</div></div><div class="Ticket-module__ticket___2Psgg"><div class="LabelGroup-module__label_group___1O2je"><label class="Label-module__label___16Blo LabelGroup-module__label___3tYoR">Маршрут</label><div><div class="Text-module__text___k0kSx Text-module__size-xl___ph98X Text-module__weight-medium___2a9HY">{{bus}}</div><div class="Text-module__text___k0kSx Text-module__size-m___1r9UX">{{bus_name}}</div><div class="LicensePlate-module__license_plate___BiHof LicensePlate-module__size-m___9Xxgc"><span class="LicensePlate-module__main___2LmkT">{{number}}</span><span class="LicensePlate-module__region___1hLjS">69</span></div></div></div><div class="LabelGroup-module__label_group___1O2je"><label class="Label-module__label___16Blo LabelGroup-module__label___3tYoR">Оплачен</label><div><div class="Text-module__text___k0kSx Text-module__size-m___1r9UX">{{minuts_ago}}</div></div><div class="Text-module__text___k0kSx Text-module__size-s___LlQOR">{{time}}</div></div><div class="LabelGroup-module__label_group___1O2je"><label class="Label-module__label___16Blo LabelGroup-module__label___3tYoR">Поездка</label><div><div class="Route-module__route___3LSYK"><div class="Route-module__point___8dImp"><div class="Text-module__text___k0kSx Text-module__size-m___1r9UX">{{start_station}}</div></div><div class="Route-module__point___8dImp"><div class="Text-module__text___k0kSx Text-module__size-m___1r9UX">{{stop_station}}</div></div></div></div></div></div><div class="Bg-module__bg___2UbgV Bg-module__color-green___2R3Ud"></div></div></div></div>
+<script type="text/javascript" src="/bundle.js"></script>
+
+</body></html>
